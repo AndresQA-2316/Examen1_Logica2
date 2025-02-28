@@ -112,11 +112,10 @@ public class FrmDevueltas extends JFrame{
                     dtm.addRow(new Object[]{valor, (valor >= 1000) ? "billete" : "moneda", cantidadUsar});
                     monto -= cantidadUsar * valor;
                 }
-
-            if (monto > 0) {
+            }
+              if (monto > 0) {
                 JOptionPane.showMessageDialog(this, "No se puede devolver el monto exacto con las denominaciones disponibles.");
                 }
-            }
         }
     }
 }
